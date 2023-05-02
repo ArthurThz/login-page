@@ -73,3 +73,13 @@ export const InputGroup = styled.div`
     align-items:center;
     justify-content:space-between;
 `
+
+export const ButtonContainer = styled.div`
+    width:30%;
+
+    margin-top:1.5em;
+    
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+`
