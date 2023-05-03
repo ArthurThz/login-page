@@ -5,7 +5,7 @@ import { IVariant } from "./types";
 
 export const StyledButton = styled.button<IVariant>`
     width:190px;
-    height:60px;
+    height:50px;
 
     display:flex;
     align-items:center;

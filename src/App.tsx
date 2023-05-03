@@ -29,15 +29,17 @@ function App() {
           </p>
         </TextArea>
         <InputArea>
-          <InputGroup>
-            <Input type="text" name="firstname" text="Nome" />
-            <Input type="text" name="lastname" text="Sobrenome" />
-          </InputGroup>
-          <Input type="mail" name="email" text="E-mail" />
-          <Input type="password" name="password" text="Senha" />
+          <form>
+            <InputGroup>
+              <Input type="text" name="firstname" text="Nome" />
+              <Input type="text" name="lastname" text="Sobrenome" />
+            </InputGroup>
+            <Input type="mail" name="email" text="E-mail" />
+            <Input type="password" name="password" text="Senha" />
+          </form>
         </InputArea>
         <ButtonContainer>
-          <Button variant="secondary">Change Method</Button>
+          <Button variant="secondary">Login</Button>
           <Button>Create account</Button>
         </ButtonContainer>
       </Main>

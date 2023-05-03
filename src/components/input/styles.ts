@@ -18,6 +18,15 @@ export const InputContainer = styled.div`
         margin-bottom:5px;      
     }
 
+    /* don't allow the browser change the background color in auto-complete */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #FFFFFF !important;
+}   
+
 `
 export const StyledInput = styled.input`
     width:100%;
@@ -41,6 +50,8 @@ export const StyledInput = styled.input`
         outline:2px solid ${COLORS.outlineBlue};
         box-shadow: ${COLORS.outlineBlue} 0px 0px 10px 0px;
     }
+    
+ 
 
 `
    
