@@ -39,7 +39,7 @@ export const TextArea = styled.div`
         }
     }
 
-    margin-top:10%;
+  
     
 `
 
@@ -55,6 +55,7 @@ export const InputArea = styled.div`
     flex-direction:column;
     align-items:flex-start;
     justify-content:space-between;
+
     }
 `
 

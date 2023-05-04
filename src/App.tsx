@@ -5,16 +5,16 @@ import { Main, Container } from "./styles/styles";
 import NavBar from "./components/layout/navbar";
 import SignUp from "./components/pages/sign-up";
 import SignIn from "./components/pages/sign-in";
+import SucessPage from "./components/pages/sucess-page";
 
 function App() {
   return (
-    <Container>
-      <Main>
-        <NavBar />
-        {/* <SignUp /> */}
-        <SignIn />
-      </Main>
-    </Container>
+    <Main>
+      <NavBar />
+      {/* <SignUp /> */}
+      {/* <SignIn /> */}
+      <SucessPage />
+    </Main>
   );
 }
 

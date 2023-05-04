@@ -15,12 +15,12 @@ export const Container = styled.div`
 `
 
 export const Main = styled.main`
-    height:70%;
-    width:80%;
+    height:100vh;
+    width:100%;
 
     padding:4em;
 
-    border-radius:3%;
+    
     
     background-image:linear-gradient(90deg, rgba(39,42,55,0.9514180672268907) 100%, rgba(39,42,55,1) 100%, rgba(85,91,105,1) 100%),url(${background}); 
     background-color:#272A37;
