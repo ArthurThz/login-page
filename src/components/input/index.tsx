@@ -1,14 +1,13 @@
-import { InputContainer,StyledInput } from "./styles";
+import { InputContainer, StyledInput } from "./styles";
 import { IInput } from "./types";
 
-const Input = ({type, name, text} : IInput) => {
-    return  (
-        <InputContainer>      
-            <label htmlFor={name}>{text}</label>     
-            <StyledInput type={type}  name={name} />
-        </InputContainer>
-    )
-     
-}
- 
+const Input = ({ type, name, text, value, onChange }: IInput) => {
+  return (
+    <InputContainer>
+      <label htmlFor={name}>{text}</label>
+      <StyledInput value={value} onChange={onChange} type={type} name={name} />
+    </InputContainer>
+  );
+};
+
 export default Input;

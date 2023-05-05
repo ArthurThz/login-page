@@ -11,9 +11,9 @@ function App() {
   return (
     <Main>
       <NavBar />
-      {/* <SignUp /> */}
+      <SignUp />
       {/* <SignIn /> */}
-      <SucessPage />
+      {/* <SucessPage /> */}
     </Main>
   );
 }

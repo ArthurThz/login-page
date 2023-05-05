@@ -47,7 +47,7 @@ export const TextArea = styled.div`
 `
 
 export const InputArea = styled.div`
-    width:50%;
+    width:45%;
 
     form{
     width:100%;
@@ -70,7 +70,7 @@ export const InputGroup = styled.div`
 `
 
 export const ButtonContainer = styled.div`
-    width:50%;
+    width:100%;
 
     margin-top:1.5em;
     

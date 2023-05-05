@@ -1,5 +1,7 @@
-export interface IInput {
+export interface IInput extends React.InputHTMLAttributes<HTMLInputElement>{
     type:string,
     name:string,
-    text:string
+    text:string,
+    value?:string,
+    
 }

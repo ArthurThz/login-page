@@ -1,11 +1,19 @@
 {
-    "user":[
-        {
-            "name":"Arthur",
-            "lastName":"Theodoro",
-            "email":"arthur@arthur.com",
-            "password":"1234567"
-
-        }
-    ]
+  "user": [
+    {
+      "id": 19,
+      "firstName": "Arthur",
+      "lastName": "Theodoro",
+      "email": "arthur@arthur.com",
+      "password": "123123"
+    },
+    {
+      "id": 25,
+      "firstName": "theodoro",
+      "lastName": "theodoro",
+      "email": "theodoro@theodoro.com",
+      "password": "123123"
+    }
+    
+  ]
 }
