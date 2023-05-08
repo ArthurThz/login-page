@@ -10,6 +10,7 @@ import Input from "../../input";
 import Button from "../../button";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { BlueDot } from "../../../styles/styles";
 import { IEvents, IForm } from "./types";
@@ -43,7 +44,10 @@ const SignUp = () => {
           Create new account<BlueDot>.</BlueDot>
         </h1>
         <p>
-          Already A Member? <span>Log In</span>
+          Already A Member?{" "}
+          <span>
+            <Link to="/">Log In</Link>
+          </span>
         </p>
       </TextArea>
       <InputArea>
@@ -75,9 +79,6 @@ const SignUp = () => {
             text="Senha"
           />
           <ButtonContainer>
-            <Button type="button" variant="secondary">
-              Login
-            </Button>
             <Button type="submit">Create account</Button>
           </ButtonContainer>
         </form>

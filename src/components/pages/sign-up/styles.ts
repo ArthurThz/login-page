@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { COLORS } from "../../../styles/colors";
+import background from '../../../assets/background.png'
 
 
 export const Container = styled.div`
     width:100%;
-    height:100%;
+    height:100vh;
 
     padding:4em 0;
     display:flex;
@@ -12,9 +13,9 @@ export const Container = styled.div`
     justify-content:center;
     flex-direction:column;
 
-    background-color:transparent;
-`
+    background-image:linear-gradient(90deg, rgba(39,42,55,0.9514180672268907) 100%, rgba(39,42,55,1) 100%, rgba(85,91,105,1) 100%),url(${background}); 
 
+` 
 export const TextArea = styled.div`
     width:50%;
     padding:2em 0;
@@ -35,10 +36,13 @@ export const TextArea = styled.div`
         color:${COLORS.textWhite}
     }
     span{
-        color:${COLORS.dotBlue};
-
-        &:hover{
-            cursor:pointer;
+        a{
+            color:${COLORS.dotBlue};
+            text-decoration:none;
+    
+            &:hover{
+                cursor:pointer;
+            }
         }
     }
 

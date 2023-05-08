@@ -32,14 +32,16 @@ export const TextArea = styled.div`
         color:${COLORS.textWhite}
     }
     span{
-        color:${COLORS.dotBlue};
 
-        &:hover{
-            cursor:pointer;
+        a{
+            color:${COLORS.dotBlue};
+            text-decoration:none;
+    
+            &:hover{
+                cursor:pointer;
+            }
         }
-    }
-
-  
+        }  
     
 `
 
