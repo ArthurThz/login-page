@@ -1,7 +1,9 @@
 import { Header, NavLinks, Title, Circle } from "./styles";
 import { BlueDot } from "../../../styles/styles";
+import { useUserContext } from "../../../context/User/hook";
 
 const NavBar = () => {
+  const { user, setUser } = useUserContext();
   return (
     <Header>
       <Title>
@@ -13,6 +15,7 @@ const NavBar = () => {
       <NavLinks>
         <span>Home</span>
         <span>Join</span>
+        {user ? <span onClick={() => setUser("")}>LogOut</span> : null}
       </NavLinks>
     </Header>
   );

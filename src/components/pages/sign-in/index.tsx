@@ -2,17 +2,15 @@ import Input from "../../input";
 import Button from "../../button";
 import { ButtonContainer, Container, InputArea, TextArea } from "./styles";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import { api } from "../../../services/api";
 
 import { IProps } from "./types";
-import { useUserContext } from "../../../context/hook";
+import { useUserContext } from "../../../context/User/hook";
 
 const SignIn = () => {
-  const navigate = useNavigate();
-
   const { setUser } = useUserContext();
 
   const [userInput, setUserInput] = useState<string>("");
@@ -40,7 +38,6 @@ const SignIn = () => {
       }
 
       setUser(data[0].firstName);
-      navigate("/sucess");
     } catch {
       alert("houve um erro, tente novamente.");
     }

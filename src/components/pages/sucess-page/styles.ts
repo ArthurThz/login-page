@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import background from '../../../assets/background.png'
+
 
 export const Container = styled.div`
     width:100%;
-    height:100vh;
+    height:100%;
 
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction:column;  
 
-    background-image:linear-gradient(90deg, rgba(39,42,55,0.9514180672268907) 100%, rgba(39,42,55,1) 100%, rgba(85,91,105,1) 100%),url(${background}); 
-
+    background-color:transparent;
     gap:1.4em;
 
     img{
