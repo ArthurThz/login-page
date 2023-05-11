@@ -13,7 +13,27 @@
       "lastName": "theodoro",
       "email": "theodoro@theodoro.com",
       "password": "123123"
+    },
+    {
+      "id": 42,
+      "firstName": "teste",
+      "lastName": "teste",
+      "email": "teste@teste.com",
+      "password": "123123123"
+    },
+    {
+      "id": 2,
+      "firstName": "joao",
+      "lastName": "das neves",
+      "email": "joao@joao.com",
+      "password": "123123123"
+    },
+    {
+      "id": 68,
+      "firstName": "teste",
+      "lastName": "teste",
+      "email": "teste@teste.com",
+      "password": "123123"
     }
-    
   ]
 }
