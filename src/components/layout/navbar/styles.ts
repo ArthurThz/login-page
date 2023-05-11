@@ -6,8 +6,9 @@ export const Header = styled.header`
 
     display:flex;
     align-items:center;
-    justify-content:flex-start;
+    justify-content:space-between;
     
+
 `
 
 export const Title = styled.div`
@@ -18,6 +19,9 @@ export const Title = styled.div`
     gap: 0.5em;
 
     h2{
+        @media(max-width:640px){
+        font-size:.8em;
+    }
         font-size:1em;
         letter-spacing:-0.5px;
         color:${COLORS.textWhite};
@@ -38,6 +42,7 @@ export const Circle = styled.div`
 export const NavLinks = styled.div`
     gap:3em;
     padding:0 2em;
+    
 
     span{
         font-family:'Roboto', sans-serif;

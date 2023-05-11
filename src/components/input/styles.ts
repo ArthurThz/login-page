@@ -31,7 +31,8 @@ export const InputContainer = styled.div`
 export const StyledInput = styled.input`
     width:100%;
    
-    height:60px;   
+    height:60px; 
+    min-height:40px;  
 
     border:none;
     border-radius:20px;

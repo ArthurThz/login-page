@@ -13,8 +13,6 @@ const NavBar = () => {
         </h2>
       </Title>
       <NavLinks>
-        <span>Home</span>
-        <span>Join</span>
         {user ? <span onClick={() => setUser("")}>LogOut</span> : null}
       </NavLinks>
     </Header>

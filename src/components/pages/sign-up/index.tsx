@@ -44,9 +44,9 @@ const SignUp = () => {
           Create new account<BlueDot>.</BlueDot>
         </h1>
         <p>
-          Already A Member?{" "}
+          Já possui um cadastro?{" "}
           <span>
-            <Link to="/">Log In</Link>
+            <Link to="/">Login</Link>
           </span>
         </p>
       </TextArea>

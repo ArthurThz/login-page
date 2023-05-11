@@ -17,6 +17,8 @@ export const Container = styled.div`
 
 ` 
 export const TextArea = styled.div`
+
+    
     width:50%;
     padding:2em 0;
 
@@ -30,10 +32,18 @@ export const TextArea = styled.div`
     p{
         color:${COLORS.spanGrey};
         font-weight:800;
+        @media(max-height:590px){
+        font-size:.7em;
+    }
     }
 
     h1{
-        color:${COLORS.textWhite}
+        color:${COLORS.textWhite};
+
+        @media(max-height:590px){
+        font-size:1.4em;
+    }
+       
     }
     span{
         a{
@@ -47,38 +57,67 @@ export const TextArea = styled.div`
     }
 
     
-    
+    @media(max-width:640px){
+        width:100%;
+        align-items:center;
+        justify-content:center;
+    }
+
 `
 
 export const InputArea = styled.div`
-    width:45%;
-
-    form{
-    width:100%;
-
-    gap:1em;
     
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content:space-between;
+    width:45%;
+    
+    form{
+        width:100%;
+        
+        gap:1em;
+        
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:space-between;
+    }
+
+    @media(max-width:850px){
+        width:80%;
+    }
+    @media(max-width:640px){
+        width:90%;   
     }
 `
 
 export const InputGroup = styled.div`
+    
     gap: 0.5em;
     width:100%;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    
+    @media(max-width:640px){
+         flex-direction:column;   
+        }
 `
 
 export const ButtonContainer = styled.div`
-    width:100%;
 
-    margin-top:1.5em;
-    
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+button{
+    @media(max-height:590px){
+        height:40px;
+        margin-top:-5px;
+    }
+}
+width:100%;
+
+margin-top:1.5em;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+@media(max-width:640px){
+        justify-content:center;
+    }
 `

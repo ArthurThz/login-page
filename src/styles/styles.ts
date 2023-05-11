@@ -15,6 +15,19 @@ export const Container = styled.div`
 `
 
 export const Main = styled.main`
+
+    @media(max-width: 640px){
+        padding:1em 0;
+
+        button{
+            height:40px;
+            width:170px;
+        }
+    }
+    @media(max-width:720px){
+        padding:2em
+    }
+
     height:100vh;
     width:100%;
 
@@ -24,6 +37,7 @@ export const Main = styled.main`
     
     background-image:linear-gradient(90deg, rgba(39,42,55,0.9514180672268907) 100%, rgba(39,42,55,1) 100%, rgba(85,91,105,1) 100%),url(${background}); 
     background-color:#272A37;
+    
 `
 export const BlueDot = styled.span`
     color:${COLORS.dotBlue};
